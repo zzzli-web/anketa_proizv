@@ -1,0 +1,205 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Анкета для оценки контрактных производств">
+  <title>Анкета контрактного производства</title>
+  <style>
+:root{--ink:#17211b;--muted:#69736d;--paper:#f7f6f1;--white:#fff;--green:#275d45;--green2:#173f30;--mint:#dcece3;--line:#dfe3de;--warm:#efe9dd;--danger:#a43a35;--shadow:0 18px 55px rgba(25,50,38,.10)}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.55 Inter,Arial,sans-serif}button,input,textarea,select{font:inherit}.topbar{height:72px;padding:0 max(24px,calc((100vw - 1180px)/2));display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid rgba(39,93,69,.13);background:rgba(247,246,241,.9);backdrop-filter:blur(14px);position:sticky;top:0;z-index:10}.brand{display:flex;align-items:center;gap:11px;color:var(--ink);text-decoration:none;font-weight:750}.brand-mark{display:grid;place-items:center;width:36px;height:36px;border-radius:50%;background:var(--green);color:#fff;font-size:13px;letter-spacing:.5px}.save-state{font-size:13px;color:var(--muted)}main{max-width:1180px;margin:auto;padding:0 24px}.hero{min-height:calc(100vh - 120px);display:flex;flex-direction:column;align-items:flex-start;justify-content:center;max-width:850px;padding:70px 0}.eyebrow{text-transform:uppercase;letter-spacing:.15em;color:var(--green);font-weight:800;font-size:12px;margin-bottom:18px}.hero h1{font-family:Georgia,serif;font-size:clamp(48px,8vw,90px);line-height:.98;letter-spacing:-.045em;margin:0 0 28px;font-weight:500}.lead{font-size:20px;max-width:760px;color:#4d5851;margin:0 0 28px}.hero-meta{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:38px}.hero-meta span{padding:7px 12px;border:1px solid var(--line);border-radius:30px;font-size:13px;color:var(--muted);background:rgba(255,255,255,.45)}.button{border:0;border-radius:10px;padding:14px 22px;font-weight:750;cursor:pointer;transition:.2s transform,.2s background,.2s box-shadow}.button:hover{transform:translateY(-1px)}.button.primary{background:var(--green);color:#fff;box-shadow:0 8px 25px rgba(39,93,69,.22)}.button.primary:hover{background:var(--green2)}.button.ghost{background:#fff;color:var(--ink);border:1px solid var(--line)}.button.text{background:transparent;color:var(--green)}.form-shell{display:grid;grid-template-columns:240px minmax(0,1fr);gap:48px;padding:60px 0 100px;align-items:start}.sidebar{position:sticky;top:110px}.progress-copy{display:flex;justify-content:space-between;color:var(--muted);font-size:13px}.progress-copy strong{color:var(--green)}.progress{height:5px;background:#e2e4df;border-radius:9px;margin:10px 0 28px;overflow:hidden}.progress span{display:block;width:25%;height:100%;background:var(--green);transition:width .3s}.steps{list-style:none;padding:0;margin:0}.steps li{display:flex;align-items:center;gap:12px;padding:12px 0;color:#89918c}.steps li>span{width:30px;height:30px;border:1px solid var(--line);border-radius:50%;display:grid;place-items:center;font-size:12px}.steps b,.steps small{display:block}.steps b{font-size:14px}.steps small{font-size:12px}.steps li.active,.steps li.done{color:var(--ink)}.steps li.active>span{background:var(--green);color:white;border-color:var(--green)}.steps li.done>span{background:var(--mint);color:var(--green);border-color:var(--mint)}form{background:var(--white);border:1px solid rgba(39,93,69,.1);border-radius:20px;padding:clamp(24px,5vw,58px);box-shadow:var(--shadow);min-width:0}.form-step{display:none}.form-step.active{display:block;animation:fade .3s ease}@keyframes fade{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}.section-head{display:flex;gap:18px;align-items:flex-start;margin-bottom:38px}.section-head>span{font:italic 22px Georgia,serif;color:var(--green)}.section-head h2{font:500 clamp(30px,5vw,44px)/1.05 Georgia,serif;margin:0 0 7px}.section-head p{margin:0;color:var(--muted)}.grid{display:grid;gap:20px}.grid.two{grid-template-columns:repeat(2,minmax(0,1fr))}.grid.three{grid-template-columns:repeat(3,minmax(0,1fr))}label,fieldset{display:block;margin:0 0 24px}label,legend{font-size:14px;font-weight:750}em{color:var(--danger);font-style:normal}input,textarea,select{display:block;width:100%;margin-top:8px;border:1px solid var(--line);border-radius:9px;background:#fbfcfa;padding:13px 14px;color:var(--ink);outline:none;transition:.2s}textarea{resize:vertical;min-height:80px}input:focus,textarea:focus,select:focus{border-color:var(--green);box-shadow:0 0 0 3px rgba(39,93,69,.1);background:#fff}.invalid{border-color:var(--danger)!important}.checks,.radios{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin-top:10px}.checks.three{grid-template-columns:repeat(3,minmax(0,1fr))}.checks.four{grid-template-columns:repeat(4,minmax(0,1fr))}.checks label,.radios label{margin:0;position:relative}.checks input,.radios input{position:absolute;opacity:0;width:1px}.checks span,.radios span{display:flex;align-items:center;min-height:48px;padding:10px 12px;border:1px solid var(--line);border-radius:9px;background:#fbfcfa;font-weight:600;cursor:pointer}.checks input:checked+span,.radios input:checked+span{border-color:var(--green);background:var(--mint);color:var(--green2)}.checks.compact span{min-height:42px}.radios.horizontal{grid-template-columns:repeat(3,1fr)}fieldset{padding:0;border:0;min-width:0}legend{margin-bottom:6px}.notice{padding:16px 18px;border-left:3px solid var(--green);background:var(--mint);margin-bottom:28px;border-radius:0 9px 9px 0}.file-label input{position:absolute;opacity:0;width:1px}.file-box{display:flex;min-height:92px;flex-direction:column;align-items:center;justify-content:center;margin-top:8px;border:1px dashed #aeb9b1;border-radius:9px;background:#fbfcfa;color:var(--green);cursor:pointer}.file-box small{display:block;color:var(--muted);font-weight:400}.conditional{display:none;padding:18px;background:#f7faf7;border-radius:10px}.conditional.visible{display:block}.consent{display:flex;gap:11px;align-items:flex-start;padding:18px;background:var(--warm);border-radius:10px}.consent input{width:auto;margin:4px 0 0}.field-error{color:var(--danger);font-size:12px;margin:7px 0 0}.form-actions{display:flex;justify-content:space-between;gap:12px;margin-top:38px;padding-top:26px;border-top:1px solid var(--line)}#nextButton,#submitButton{margin-left:auto}.success{max-width:720px;text-align:center;margin:100px auto;padding:60px;background:#fff;border-radius:20px;box-shadow:var(--shadow)}.success-icon{width:70px;height:70px;border-radius:50%;display:grid;place-items:center;margin:0 auto 22px;background:var(--mint);color:var(--green);font-size:32px}.success h2{font:500 42px/1.1 Georgia,serif;margin:0 0 16px}.success p{color:var(--muted)}.success-actions{display:flex;flex-wrap:wrap;justify-content:center;gap:10px;margin-top:30px}footer{text-align:center;color:var(--muted);font-size:12px;padding:28px}.hidden{display:none!important}@media(max-width:850px){.form-shell{grid-template-columns:1fr;padding-top:28px}.sidebar{position:static}.steps{display:grid;grid-template-columns:repeat(4,1fr)}.steps li{display:block}.steps li div{display:none}.grid.three{grid-template-columns:1fr}.checks.three,.checks.four{grid-template-columns:repeat(2,1fr)}}@media(max-width:600px){.topbar{height:62px;padding:0 16px}.save-state{display:none}main{padding:0 14px}.hero{padding:52px 5px}.hero h1{font-size:48px}.lead{font-size:17px}form{padding:24px 17px;border-radius:14px}.grid.two,.checks,.checks.three,.checks.four,.radios,.radios.horizontal{grid-template-columns:1fr}.section-head h2{font-size:34px}.form-actions .button{padding:13px 16px}.success{padding:40px 20px;margin:50px 0}}
+@media print{.topbar,.sidebar,.form-actions,footer,.success-actions{display:none!important}.form-shell{display:block;padding:0}form{box-shadow:none;border:0;padding:0}.form-step{display:block!important;page-break-after:auto}.conditional{display:block}.hero{display:none}}
+
+</style>
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#" aria-label="На начало формы">
+      <span class="brand-mark">КП</span>
+      <span>Партнёрское производство</span>
+    </a>
+    <span class="save-state" id="saveState">Черновик сохраняется автоматически</span>
+  </header>
+
+  <main>
+    <section class="hero" id="hero">
+      <div class="eyebrow">Анкета для новых партнёров</div>
+      <h1>Расскажите о вашем производстве</h1>
+      <p class="lead">Нам важно понять ассортимент, сроки и техническую схему работы. Если информация уже есть в каталоге или прайсе — просто приложите файлы или ссылки.</p>
+      <div class="hero-meta">
+        <span>10–15 минут</span><span>4 коротких шага</span><span>Черновик сохранится</span>
+      </div>
+      <button class="button primary" id="startButton" type="button">Начать заполнение</button>
+    </section>
+
+    <section class="form-shell hidden" id="formShell">
+      <aside class="sidebar" aria-label="Разделы формы">
+        <div class="progress-copy"><span id="progressLabel">Шаг 1 из 4</span><strong id="progressPercent">25%</strong></div>
+        <div class="progress"><span id="progressBar"></span></div>
+        <ol class="steps" id="steps">
+          <li class="active"><span>1</span><div><b>Контакты</b><small>О компании</small></div></li>
+          <li><span>2</span><div><b>Ассортимент</b><small>Товары и цены</small></div></li>
+          <li><span>3</span><div><b>Сроки</b><small>График и мощности</small></div></li>
+          <li><span>4</span><div><b>Макеты</b><small>Техническая схема</small></div></li>
+        </ol>
+      </aside>
+
+      <form id="briefForm" novalidate>
+        <section class="form-step active" data-step="0">
+          <div class="section-head"><span>01</span><div><h2>Контакты</h2><p>К кому обращаться по вопросам сотрудничества</p></div></div>
+          <div class="grid two">
+            <label>Название компании <em>*</em><input name="company" required autocomplete="organization"></label>
+            <label>Город производства <em>*</em><input name="city" required></label>
+            <label>Контактное лицо <em>*</em><input name="contact" required autocomplete="name"></label>
+            <label>Должность<input name="role"></label>
+            <label>Телефон / мессенджер <em>*</em><input name="phone" required autocomplete="tel"></label>
+            <label>Электронная почта <em>*</em><input type="email" name="email" required autocomplete="email"></label>
+          </div>
+          <label>Сайт или соцсети<input type="url" name="website" placeholder="https://"></label>
+        </section>
+
+        <section class="form-step" data-step="1">
+          <div class="section-head"><span>02</span><div><h2>Ассортимент и цены</h2><p>Можно ответить кратко и приложить готовые материалы</p></div></div>
+          <fieldset><legend>Категории товаров <em>*</em></legend><div class="checks three">
+            <label><input type="checkbox" name="categories" value="Посуда и кружки"><span>Посуда и кружки</span></label>
+            <label><input type="checkbox" name="categories" value="Текстиль"><span>Текстиль</span></label>
+            <label><input type="checkbox" name="categories" value="Аксессуары"><span>Аксессуары</span></label>
+            <label><input type="checkbox" name="categories" value="Сувениры"><span>Сувениры</span></label>
+            <label><input type="checkbox" name="categories" value="Упаковка"><span>Упаковка</span></label>
+            <label><input type="checkbox" name="categories" value="Другое"><span>Другое</span></label>
+          </div><p class="field-error" data-check-error="categories"></p></fieldset>
+          <label>Полный перечень товаров <em>*</em><textarea name="products" required rows="4" placeholder="Перечислите товары или напишите «см. каталог»"></textarea></label>
+          <div class="grid two">
+            <label>Ссылка на каталог / прайс<input type="url" name="catalogUrl" placeholder="https://"></label>
+            <label class="file-label">Каталог, прайс или таблица<input type="file" name="catalogFiles" multiple accept=".pdf,.xlsx,.xls,.docx,.zip,.jpg,.jpeg,.png"><span class="file-box">Выбрать файлы <small>PDF, XLSX, DOCX, ZIP или изображения</small></span></label>
+          </div>
+          <fieldset><legend>Какие характеристики доступны? <em>*</em></legend><div class="checks three compact">
+            <label><input type="checkbox" name="specs" value="Материал"><span>Материал</span></label><label><input type="checkbox" name="specs" value="Размеры"><span>Размеры</span></label><label><input type="checkbox" name="specs" value="Вес"><span>Вес</span></label><label><input type="checkbox" name="specs" value="Объём"><span>Объём</span></label><label><input type="checkbox" name="specs" value="Плотность"><span>Плотность</span></label><label><input type="checkbox" name="specs" value="Упаковка"><span>Упаковка</span></label>
+          </div><p class="field-error" data-check-error="specs"></p></fieldset>
+          <label>Характеристики, которых нет в каталоге<textarea name="specDetails" rows="3" placeholder="Товар → материал → размеры → вес → объём/плотность → упаковка"></textarea></label>
+          <div class="grid two">
+            <label>Цена за единицу <em>*</em><input name="unitPrice" required placeholder="Укажите диапазон и что входит в цену"></label>
+            <label>Минимальный заказ <em>*</em><input name="minimumOrder" required placeholder="Сумма и/или количество"></label>
+          </div>
+          <fieldset><legend>От чего зависит цена? <em>*</em></legend><div class="checks three compact">
+            <label><input type="checkbox" name="priceFactors" value="Тираж"><span>Тираж</span></label><label><input type="checkbox" name="priceFactors" value="Материал"><span>Материал</span></label><label><input type="checkbox" name="priceFactors" value="Печать"><span>Печать</span></label><label><input type="checkbox" name="priceFactors" value="Срочность"><span>Срочность</span></label><label><input type="checkbox" name="priceFactors" value="Упаковка"><span>Упаковка</span></label><label><input type="checkbox" name="priceFactors" value="Цена фиксирована"><span>Цена фиксирована</span></label>
+          </div><p class="field-error" data-check-error="priceFactors"></p></fieldset>
+          <label>Тиражные скидки<textarea name="discounts" rows="2" placeholder="Например: 1–49, 50–99, 100–299, 300+ шт."></textarea></label>
+        </section>
+
+        <section class="form-step" data-step="2">
+          <div class="section-head"><span>03</span><div><h2>Сроки и мощности</h2><p>Заказы поступают в течение дня, часто с разными дизайнами</p></div></div>
+          <div class="notice"><b>Ключевое условие:</b> целевой срок изготовления — до 9 часов, критический максимум — 13 часов.</div>
+          <label>График работы <em>*</em><textarea name="schedule" required rows="3" placeholder="Дни, часы, ночные смены, выходные и праздники"></textarea></label>
+          <fieldset><legend>Как часто можно передавать новые заказы? <em>*</em></legend><div class="radios">
+            <label><input type="radio" name="orderFrequency" value="В любое время" required><span>В любое время по мере поступления</span></label>
+            <label><input type="radio" name="orderFrequency" value="Несколько раз в день"><span>Несколько раз в день</span></label>
+            <label><input type="radio" name="orderFrequency" value="По слотам" data-reveal="slots"><span>Только в определённые слоты</span></label>
+          </div></fieldset>
+          <label class="conditional" data-condition="slots">Временные слоты и время отсечения<textarea name="timeSlots" rows="2" placeholder="Например: до 12:00 — готово сегодня"></textarea></label>
+          <div class="grid three">
+            <label>Обычный срок, часов <em>*</em><input type="number" min="1" name="normalHours" required></label>
+            <label>Пиковый срок, часов <em>*</em><input type="number" min="1" name="peakHours" required></label>
+            <label>Мощность в сутки <em>*</em><input type="number" min="1" name="dailyCapacity" required></label>
+          </div>
+          <fieldset><legend>Стабильно укладываетесь в 9 часов? <em>*</em></legend><div class="radios horizontal">
+            <label><input type="radio" name="target9" value="Да" required><span>Да</span></label><label><input type="radio" name="target9" value="При условиях" data-reveal="timingLimits"><span>При условиях</span></label><label><input type="radio" name="target9" value="Нет" data-reveal="timingLimits"><span>Нет</span></label>
+          </div></fieldset>
+          <fieldset><legend>Не превышаете 13 часов? <em>*</em></legend><div class="radios horizontal">
+            <label><input type="radio" name="max13" value="Да" required><span>Да</span></label><label><input type="radio" name="max13" value="При условиях" data-reveal="timingLimits"><span>При условиях</span></label><label><input type="radio" name="max13" value="Нет" data-reveal="timingLimits"><span>Нет</span></label>
+          </div></fieldset>
+          <label class="conditional" data-condition="timingLimits">Ограничения и реалистичный срок<textarea name="timingLimitDetails" rows="3"></textarea></label>
+          <label>Как происходит отгрузка? <em>*</em><textarea name="shipping" required rows="3" placeholder="Интервалы, самовывоз/доставка, упаковка, трек-номера"></textarea></label>
+        </section>
+
+        <section class="form-step" data-step="3">
+          <div class="section-head"><span>04</span><div><h2>Заказы и макеты</h2><p>Последний шаг — техническая схема работы</p></div></div>
+          <fieldset><legend>Как принимаете заказы и макеты? <em>*</em></legend><div class="checks three compact">
+            <label><input type="checkbox" name="transferMethods" value="Email"><span>Email</span></label><label><input type="checkbox" name="transferMethods" value="Мессенджер"><span>Мессенджер</span></label><label><input type="checkbox" name="transferMethods" value="Облако"><span>Облачная папка</span></label><label><input type="checkbox" name="transferMethods" value="Таблица"><span>Таблица</span></label><label><input type="checkbox" name="transferMethods" value="Личный кабинет"><span>Личный кабинет</span></label><label><input type="checkbox" name="transferMethods" value="API"><span>API</span></label>
+          </div><p class="field-error" data-check-error="transferMethods"></p></fieldset>
+          <label>Рекомендуемая схема для непрерывного потока <em>*</em><textarea name="recommendedTransfer" required rows="3"></textarea></label>
+          <fieldset><legend>Возможна автоматизация? <em>*</em></legend><div class="radios">
+            <label><input type="radio" name="automation" value="Есть API" required data-reveal="integration"><span>Есть готовый API / интеграция</span></label><label><input type="radio" name="automation" value="Можем настроить" data-reveal="integration"><span>Можем разработать или настроить</span></label><label><input type="radio" name="automation" value="Частично" data-reveal="integration"><span>Частично</span></label><label><input type="radio" name="automation" value="Нет"><span>Нет</span></label>
+          </div></fieldset>
+          <div class="conditional" data-condition="integration"><label>Описание интеграции<textarea name="integrationDetails" rows="3" placeholder="API, webhook, формат обмена, авторизация"></textarea></label><label>Документация API<input type="url" name="apiDocs" placeholder="https://"></label></div>
+          <label>Как связать заказ, макет и изделие без ошибок? <em>*</em><textarea name="orderMatching" required rows="3" placeholder="Номер заказа, QR-код, имя файла, папка заказа"></textarea></label>
+          <fieldset><legend>Кто собирает печатные листы? <em>*</em></legend><div class="radios">
+            <label><input type="radio" name="printSheets" value="Производство" required><span>Производство</span></label><label><input type="radio" name="printSheets" value="Производство за плату"><span>Производство за дополнительную плату</span></label><label><input type="radio" name="printSheets" value="Заказчик"><span>Нужны готовые печатные листы</span></label>
+          </div></fieldset>
+          <fieldset><legend>Форматы файлов <em>*</em></legend><div class="checks four compact">
+            <label><input type="checkbox" name="fileFormats" value="PDF"><span>PDF</span></label><label><input type="checkbox" name="fileFormats" value="AI"><span>AI</span></label><label><input type="checkbox" name="fileFormats" value="EPS"><span>EPS</span></label><label><input type="checkbox" name="fileFormats" value="CDR"><span>CDR</span></label><label><input type="checkbox" name="fileFormats" value="SVG"><span>SVG</span></label><label><input type="checkbox" name="fileFormats" value="PSD"><span>PSD</span></label><label><input type="checkbox" name="fileFormats" value="TIFF"><span>TIFF</span></label><label><input type="checkbox" name="fileFormats" value="PNG/JPG"><span>PNG/JPG</span></label>
+          </div><p class="field-error" data-check-error="fileFormats"></p></fieldset>
+          <div class="grid two">
+            <label>Разрешение <em>*</em><select name="dpi" required><option value="">Выберите</option><option>300 DPI</option><option>150 DPI</option><option>Не применимо</option><option>Другое</option></select></label>
+            <label>Цветовая модель <em>*</em><select name="colorModel" required><option value="">Выберите</option><option>CMYK</option><option>RGB</option><option>Pantone / spot</option><option>Зависит от технологии</option></select></label>
+          </div>
+          <label>Размеры, область печати, безопасная зона и вылеты <em>*</em><textarea name="printArea" required rows="3"></textarea></label>
+          <label>Дополнительные технические требования<textarea name="technicalRequirements" rows="3" placeholder="Шрифты, слои, белила, контур реза, overprint и т. д."></textarea></label>
+          <div class="grid two"><label>Ссылка на шаблоны и примеры<input type="url" name="templatesUrl" placeholder="https://"></label><label class="file-label">Шаблоны и примеры<input type="file" name="templateFiles" multiple><span class="file-box">Выбрать файлы <small>PDF, AI, EPS, CDR, SVG, PSD или ZIP</small></span></label></div>
+          <label>Кто и за сколько проверяет макеты? <em>*</em><textarea name="artworkCheck" required rows="3"></textarea></label>
+          <label>Что ещё нам важно знать?<textarea name="additional" rows="3"></textarea></label>
+          <label class="consent"><input type="checkbox" name="confirm" required><span>Подтверждаю, что информация актуальна, и разрешаю связаться со мной для обсуждения тестового заказа. <em>*</em></span></label>
+        </section>
+
+        <div class="form-actions"><button class="button ghost hidden" id="prevButton" type="button">Назад</button><button class="button primary" id="nextButton" type="button">Продолжить</button><button class="button primary hidden" id="submitButton" type="submit">Отправить анкету</button></div>
+      </form>
+    </section>
+
+    <section class="success hidden" id="success">
+      <div class="success-icon">✓</div><div class="eyebrow">Анкета готова</div><h2>Спасибо за подробные ответы</h2><p>Скачайте готовый отчёт в формате Word или сохраните его как PDF через стандартное окно печати.</p>
+      <div class="success-actions"><button class="button primary" id="downloadButton" type="button">Скачать Word (.doc)</button><button class="button ghost" id="printButton" type="button">Сохранить как PDF</button><button class="button text" id="editButton" type="button">Вернуться к форме</button></div>
+    </section>
+  </main>
+  <footer>Анкета контрактного производства · Данные остаются на вашем устройстве</footer>
+  <script>
+const $=(s,c=document)=>c.querySelector(s), $$=(s,c=document)=>[...c.querySelectorAll(s)];
+const hero=$('#hero'), shell=$('#formShell'), form=$('#briefForm'), success=$('#success');
+const steps=$$('.form-step'), navSteps=$$('#steps li'), progressBar=$('#progressBar');
+const prev=$('#prevButton'), next=$('#nextButton'), submit=$('#submitButton');
+let current=0; const storageKey='productionBriefDraftV1';
+
+function showForm(){hero.classList.add('hidden');success.classList.add('hidden');shell.classList.remove('hidden');window.scrollTo({top:0,behavior:'smooth'});}
+$('#startButton').addEventListener('click',showForm);
+
+function updateStep(){steps.forEach((s,i)=>s.classList.toggle('active',i===current));navSteps.forEach((s,i)=>{s.classList.toggle('active',i===current);s.classList.toggle('done',i<current)});const pct=Math.round((current+1)/steps.length*100);progressBar.style.width=pct+'%';$('#progressLabel').textContent=`Шаг ${current+1} из ${steps.length}`;$('#progressPercent').textContent=pct+'%';prev.classList.toggle('hidden',current===0);next.classList.toggle('hidden',current===steps.length-1);submit.classList.toggle('hidden',current!==steps.length-1);window.scrollTo({top:0,behavior:'smooth'});}
+
+function checked(name){return $$(`[name="${name}"]:checked`,form)}
+const checkboxGroups={1:['categories','specs','priceFactors'],3:['transferMethods','fileFormats']};
+function validateStep(){let ok=true;const step=steps[current];$$('[required]',step).forEach(el=>{let valid=el.type==='checkbox'?el.checked:el.checkValidity();el.classList.toggle('invalid',!valid);if(!valid)ok=false});(checkboxGroups[current]||[]).forEach(name=>{const valid=checked(name).length>0;const err=$(`[data-check-error="${name}"]`);if(err)err.textContent=valid?'':'Выберите хотя бы один вариант';if(!valid)ok=false});if(!ok){const target=$('.invalid',step)||$('.field-error:not(:empty)',step);target?.scrollIntoView({behavior:'smooth',block:'center'});}return ok;}
+next.addEventListener('click',()=>{if(validateStep()){current++;updateStep()}});prev.addEventListener('click',()=>{current--;updateStep()});
+
+function toggleConditions(){const active=new Set($$('[data-reveal]:checked',form).map(x=>x.dataset.reveal));$$('[data-condition]').forEach(el=>el.classList.toggle('visible',active.has(el.dataset.condition)));}
+form.addEventListener('change',e=>{toggleConditions();if(e.target.type==='file'){const box=e.target.nextElementSibling;if(box){const n=e.target.files.length;box.firstChild.textContent=n?`Выбрано файлов: ${n}`:'Выбрать файлы '}}saveDraft()});
+form.addEventListener('input',debounce(saveDraft,400));
+function debounce(fn,ms){let t;return(...a)=>{clearTimeout(t);t=setTimeout(()=>fn(...a),ms)}}
+
+function serialize(){const data={};new FormData(form).forEach((v,k)=>{if(v instanceof File){if(v.name)data[k]=(data[k]?[].concat(data[k]):[]).concat(v.name);return}if(data[k])data[k]=[].concat(data[k],v);else data[k]=v});return data;}
+function saveDraft(){const data=serialize();localStorage.setItem(storageKey,JSON.stringify(data));$('#saveState').textContent='Черновик сохранён';setTimeout(()=>$('#saveState').textContent='Черновик сохраняется автоматически',1500)}
+function restore(){const raw=localStorage.getItem(storageKey);if(!raw)return;try{const data=JSON.parse(raw);Object.entries(data).forEach(([name,value])=>{const values=[].concat(value);$$(`[name="${name}"]`,form).forEach(el=>{if(el.type==='checkbox'||el.type==='radio')el.checked=values.includes(el.value);else if(el.type!=='file')el.value=values[0]??''})});toggleConditions()}catch(e){console.warn('Черновик не восстановлен')}}
+
+form.addEventListener('submit',e=>{e.preventDefault();if(!validateStep())return;saveDraft();shell.classList.add('hidden');success.classList.remove('hidden');window.scrollTo({top:0,behavior:'smooth'})});
+$('#editButton').addEventListener('click',showForm);
+$('#printButton').addEventListener('click',()=>{const reportWindow=window.open('','_blank');if(!reportWindow){alert('Разрешите всплывающие окна, чтобы сохранить отчёт в PDF.');return}reportWindow.document.open();reportWindow.document.write(wordReport(serialize()));reportWindow.document.close();reportWindow.focus();setTimeout(()=>reportWindow.print(),300)});
+const reportLabels={
+  company:'Название компании',city:'Город производства',contact:'Контактное лицо',role:'Должность',phone:'Телефон / мессенджер',email:'Электронная почта',website:'Сайт или соцсети',
+  categories:'Категории товаров',products:'Полный перечень товаров',catalogUrl:'Ссылка на каталог / прайс',catalogFiles:'Приложенные файлы',specs:'Доступные характеристики',specDetails:'Дополнительные характеристики',unitPrice:'Цена за единицу',minimumOrder:'Минимальный заказ',priceFactors:'От чего зависит цена',discounts:'Тиражные скидки',
+  schedule:'График работы',orderFrequency:'Частота передачи заказов',timeSlots:'Временные слоты',normalHours:'Обычный срок, часов',peakHours:'Пиковый срок, часов',dailyCapacity:'Мощность в сутки',target9:'Срок до 9 часов',max13:'Срок не более 13 часов',timingLimitDetails:'Ограничения по срокам',shipping:'Схема отгрузки',
+  transferMethods:'Способы передачи заказов',recommendedTransfer:'Рекомендуемая схема передачи',automation:'Возможность автоматизации',integrationDetails:'Описание интеграции',apiDocs:'Документация API',orderMatching:'Связь заказа, макета и изделия',printSheets:'Сборка печатных листов',fileFormats:'Форматы файлов',dpi:'Разрешение',colorModel:'Цветовая модель',printArea:'Область печати, безопасная зона и вылеты',technicalRequirements:'Дополнительные технические требования',templatesUrl:'Ссылка на шаблоны',templateFiles:'Приложенные шаблоны',artworkCheck:'Проверка макетов',additional:'Дополнительная информация',confirm:'Подтверждение'
+};
+const sections=[
+  ['Контакты',['company','city','contact','role','phone','email','website']],
+  ['Ассортимент и цены',['categories','products','catalogUrl','catalogFiles','specs','specDetails','unitPrice','minimumOrder','priceFactors','discounts']],
+  ['Сроки и мощности',['schedule','orderFrequency','timeSlots','normalHours','peakHours','dailyCapacity','target9','max13','timingLimitDetails','shipping']],
+  ['Заказы и макеты',['transferMethods','recommendedTransfer','automation','integrationDetails','apiDocs','orderMatching','printSheets','fileFormats','dpi','colorModel','printArea','technicalRequirements','templatesUrl','templateFiles','artworkCheck','additional']]
+];
+function escapeHtml(value){return String(value).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]))}
+function wordReport(data){
+  const body=sections.map(([title,keys])=>{const rows=keys.filter(k=>data[k]!==undefined&&data[k]!==''&&(!Array.isArray(data[k])||data[k].length)).map(k=>`<tr><td class="label">${escapeHtml(reportLabels[k]||k)}</td><td>${escapeHtml([].concat(data[k]).join(', ')).replace(/\n/g,'<br>')}</td></tr>`).join('');return rows?`<h2>${title}</h2><table>${rows}</table>`:''}).join('');
+  return `<!doctype html><html><head><meta charset="utf-8"><title>Анкета контрактного производства</title><style>@page{margin:2cm}body{font-family:Arial,sans-serif;color:#17211b;font-size:11pt}h1{font-size:24pt;color:#275d45;margin-bottom:5px}h2{font-size:15pt;color:#275d45;margin-top:25px;border-bottom:1px solid #dfe3de;padding-bottom:6px}p.meta{color:#69736d;margin-top:0}table{width:100%;border-collapse:collapse}td{padding:8px;border-bottom:1px solid #e6e9e5;vertical-align:top}.label{width:34%;font-weight:bold;color:#39443d}</style></head><body><h1>Анкета контрактного производства</h1><p class="meta">Компания: ${escapeHtml(data.company||'—')}<br>Дата формирования: ${escapeHtml(new Date().toLocaleString('ru-RU'))}</p>${body}</body></html>`;
+}
+$('#downloadButton').addEventListener('click',()=>{const data=serialize();const blob=new Blob(['\ufeff',wordReport(data)],{type:'application/msword;charset=utf-8'});const a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download=`Анкета-${(data.company||'производство').replace(/[\\/:*?"<>|]+/g,'-')}.doc`;a.click();setTimeout(()=>URL.revokeObjectURL(a.href),1000)});
+restore();updateStep();
+
+</script>
+</body>
+</html>
+
